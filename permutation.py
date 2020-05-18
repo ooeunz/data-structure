@@ -19,5 +19,3 @@ def permutation(arr, r):
 
 permutation('ABCD', 2)
 permutation([1, 2, 3, 4, 5], 3)
-
-
