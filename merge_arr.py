@@ -1,10 +1,10 @@
-def merge_sort(arr: list):
-    if len(arr) < 2:
-        return arr
+def merge_sort(x: list):
+    if len(x) < 2:
+        return x
     
-    mid = len(arr) // 2
-    low_arr = merge_sort(arr[:mid])
-    high_arr = merge_sort(arr[mid:])
+    mid = len(x) // 2
+    low_arr = merge_sort(x[:mid])
+    high_arr = merge_sort(x[mid:])
 
     merged_arr = []
     l = h = 0
@@ -15,7 +15,7 @@ def merge_sort(arr: list):
         else:
             merged_arr.append(high_arr[h])
             h += 1
-
+        
     merged_arr += low_arr[l:]
     merged_arr += high_arr[h:]
 

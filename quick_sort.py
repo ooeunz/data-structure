@@ -1,5 +1,5 @@
 def quick_sort(arr: list):
-    if len(arr) <= 1:
+    if len(arr) < 2:
         return arr
     pivot = arr[len(arr) // 2]
     less_arr, equal_arr, big_arr = [], [], []
